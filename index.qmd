@@ -1,6 +1,0 @@
----
-title: "Posts"
-listing: true
----
-
-Welcome to my blog posts!
