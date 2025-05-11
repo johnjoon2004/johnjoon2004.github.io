@@ -1,5 +1,18 @@
 ---
 title: "About"
+format: html
 ---
+![Profile](images/logo-fox-tail-3.png)
+This blog was originally intended to cover some AI-related topics, now tends to focus more on exploring the darker side of human nature.
 
-About this site
+# Topics
+The blog deals with topics below:  
+- **mainshow**: something about AI;  
+- **sideshow**: something about tech;  
+- **talkshow**: somtghing about human.
+
+# Contributing
+The low-quality sentences are written by me, and the well-written posts are gracefully given by [ChatGPT](https://openai.com/)
+
+Powered by [Github Pages](https://pages.github.com/) & [Quarto](https://quarto.org/docs/websites).  
+  

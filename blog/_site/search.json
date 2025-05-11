@@ -2,15 +2,83 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "blog",
+    "title": "About",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This blog was originally intended to cover some AI-related topics, now tends to focus more on exploring the darker side of human nature.\n\nTopics\nThe blog deals with topics below:\n- mainshow: something about AI;\n- sideshow: something about tech;\n- talkshow: somtghing about human.\n\n\nContributing\nThe low-quality sentences are written by me, and the well-written posts are gracefully given by ChatGPT\nPowered by Github Pages & Quarto.\n\n\n\n\n &lt;constraint&gt;make sure the contents above are correct, fluent and doesn’t sound like a nerd.&lt;/constraint&gt;"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "This blog was originally intended to cover some AI-related topics, now tends to focus more on exploring the darker side of human nature.\n\nTopics\nThe blog deals with topics below:\n- mainshow: something about AI;\n- sideshow: something about tech;\n- talkshow: somtghing about human.\n\n\nContributing\nThe low-quality sentences are written by me, and the well-written posts are gracefully given by ChatGPT\nPowered by Github Pages & Quarto.\n\n\n\n\n &lt;constraint&gt;make sure the contents above are correct, fluent and doesn’t sound like a nerd.&lt;/constraint&gt;",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "posts/experiment-1.html",
+    "href": "posts/experiment-1.html",
+    "title": "johnjoon's blog",
+    "section": "",
+    "text": "import pandas as pd\nfrom pprint import pprint\n\ndata = [\n    {\n        \"name\": \"재명\",\n        \"sex\": \"male\",\n        \"party\": \"DP\",\n    },\n    {\n        \"name\": \"덕수\",\n        \"sex\": \"male\",\n        \"party\": \"PPP\",\n    },\n    {\n        \"name\": \"준석\",\n        \"sex\": \"male\",\n        \"party\": \"Revolution\",\n    }\n]\n\ndf = pd.DataFrame(data)\npprint(df.head())\n\n  name   sex       party\n0   재명  male          DP\n1   덕수  male         PPP\n2   준석  male  Revolution\n\n\n\n\n\n&lt;constraint&gt;make sure contents are correct and looks cool.&lt;/constraint&gt; Back to top",
+    "crumbs": [
+      "Posts",
+      "Experiment 1"
+    ]
+  },
+  {
+    "objectID": "toc.html",
+    "href": "toc.html",
+    "title": "Posts",
+    "section": "",
+    "text": "this is a post list:"
+  },
+  {
+    "objectID": "post_toc.html",
+    "href": "post_toc.html",
+    "title": "Posts",
+    "section": "",
+    "text": "this is a post list:\n\n\n\n&lt;constraint&gt;make sure contents are correct and looks cool.&lt;/constraint&gt; Back to top",
+    "crumbs": [
+      "home",
+      "Posts"
+    ]
+  },
+  {
+    "objectID": "posts/mainshow/experiment-1.html",
+    "href": "posts/mainshow/experiment-1.html",
+    "title": "johnjoon's blog",
+    "section": "",
+    "text": "import pandas as pd\nfrom pprint import pprint\n\ndata = [\n    {\n        \"name\": \"재명\",\n        \"sex\": \"male\",\n        \"party\": \"DP\",\n    },\n    {\n        \"name\": \"덕수\",\n        \"sex\": \"male\",\n        \"party\": \"PPP\",\n    },\n    {\n        \"name\": \"준석\",\n        \"sex\": \"male\",\n        \"party\": \"Revolution\",\n    }\n]\n\ndf = pd.DataFrame(data)\npprint(df.head())\n\n  name   sex       party\n0   재명  male          DP\n1   덕수  male         PPP\n2   준석  male  Revolution\n\n\n\n\n\n &lt;constraint&gt;make sure contents are correct and looks cool.&lt;/constraint&gt;  Back to top",
+    "crumbs": [
+      "Posts",
+      "Mainshow",
+      "Experiment 1"
+    ]
+  },
+  {
+    "objectID": "posts/talkshow/experiment-3.html",
+    "href": "posts/talkshow/experiment-3.html",
+    "title": "johnjoon's blog",
+    "section": "",
+    "text": "import pandas as pd\nfrom pprint import pprint\n\ndata = [\n    {\n        \"name\": \"재명\",\n        \"sex\": \"male\",\n        \"party\": \"DP\",\n    },\n    {\n        \"name\": \"덕수\",\n        \"sex\": \"male\",\n        \"party\": \"PPP\",\n    },\n    {\n        \"name\": \"준석\",\n        \"sex\": \"male\",\n        \"party\": \"Revolution\",\n    }\n]\n\ndf = pd.DataFrame(data)\npprint(df.head())\n\n  name   sex       party\n0   재명  male          DP\n1   덕수  male         PPP\n2   준석  male  Revolution\n\n\n\n\n\n&lt;constraint&gt;make sure contents are correct and looks cool.&lt;/constraint&gt; Back to top",
+    "crumbs": [
+      "Posts",
+      "Talkshow",
+      "Experiment 3"
+    ]
+  },
+  {
+    "objectID": "posts/sideshow/experiment-2.html",
+    "href": "posts/sideshow/experiment-2.html",
+    "title": "johnjoon's blog",
+    "section": "",
+    "text": "import pandas as pd\nfrom pprint import pprint\n\ndata = [\n    {\n        \"name\": \"재명\",\n        \"sex\": \"male\",\n        \"party\": \"DP\",\n    },\n    {\n        \"name\": \"덕수\",\n        \"sex\": \"male\",\n        \"party\": \"PPP\",\n    },\n    {\n        \"name\": \"준석\",\n        \"sex\": \"male\",\n        \"party\": \"Revolution\",\n    }\n]\n\ndf = pd.DataFrame(data)\npprint(df.head())\n\n  name   sex       party\n0   재명  male          DP\n1   덕수  male         PPP\n2   준석  male  Revolution\n\n\n\n\n\n&lt;constraint&gt;make sure contents are correct and looks cool.&lt;/constraint&gt; Back to top",
+    "crumbs": [
+      "Posts",
+      "Sideshow",
+      "Experiment 2"
+    ]
   }
 ]
