@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Index"
 format: html
 ---
 ![Profile](images/logo-fox-tail-3.png)
