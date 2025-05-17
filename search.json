@@ -12,15 +12,63 @@
     ]
   },
   {
-    "objectID": "posts/mainshow/experiment-1.html",
-    "href": "posts/mainshow/experiment-1.html",
-    "title": "johnjoon's blog",
+    "objectID": "posts/mainshow/poc-sentinel.html",
+    "href": "posts/mainshow/poc-sentinel.html",
+    "title": "Project Sentinel",
     "section": "",
-    "text": "import pandas as pd\nfrom pprint import pprint\n\ndata = [\n    {\n        \"name\": \"재명\",\n        \"sex\": \"male\",\n        \"party\": \"DP\",\n    },\n    {\n        \"name\": \"덕수\",\n        \"sex\": \"male\",\n        \"party\": \"PPP\",\n    },\n    {\n        \"name\": \"준석\",\n        \"sex\": \"male\",\n        \"party\": \"Revolution\",\n    }\n]\n\ndf = pd.DataFrame(data)\npprint(df.head())\n\n  name   sex       party\n0   재명  male          DP\n1   덕수  male         PPP\n2   준석  male  Revolution\n\n\n\n\n\n &lt;constraint&gt;make sure the contents above are correct, fluent and doesn’t sound like a nerd.&lt;/constraint&gt;",
+    "text": "Author: johnjoon2004 (@code-b-devs)\nDate: 2025-05-13\n&lt;constraint&gt;make sure the contents above are correct, fluent and doesn’t sound like a nerd.&lt;/constraint&gt;",
     "crumbs": [
       "Posts",
       "Mainshow",
-      "Experiment 1"
+      "Project Sentinel"
+    ]
+  },
+  {
+    "objectID": "posts/mainshow/poc-sentinel.html#프로젝트-개요",
+    "href": "posts/mainshow/poc-sentinel.html#프로젝트-개요",
+    "title": "Project Sentinel",
+    "section": "프로젝트 개요",
+    "text": "프로젝트 개요\n\nLLM Agent: Sentinel\n\n본 프로젝트는 ’사용자 대화 및 일기 기반 멘탈 케어 AI Agent 연구 및 구현’을 목표로 합니다.\n구현하고자 하는 Agent별 기능의 확장성(Adaptability)을 핵심 요소로 고려하였기 때문에, 이러한 이름을 붙였습니다.\n원작 &lt;X-Men: Days of Future Past&gt;에 나오는 ’센티넬’은 꽤나 무시무시한 친구지만, 우리의 Sentinel은 작고 소중한 친구입니다.\n\n\n\nHow-to: Run & Gun\n\n제가 그냥 붙인 이름입니다. 무언가를 학습하는 과정에서 문서화와 프로토타입 구현을 동반하는 방식을 의미합니다.\n고도화된 에이전트 서비스 구현을 논하기엔 아직 제반 지식이 부족합니다.\n적어도 어떤 기능들이 필요할지, 그리고 그 기능들을 어떻게 구현할 수 있을지 정도까지는 빠르게 도달해야 합니다.\nSurvey 논문과 체계적으로 정리된 자료들(블로그/위키독스)부터 접근하는 것이 효율적으로 보입니다.\n기존에는 서비스를 구현할 때 요구 사항과 스펙을 나름 Solid하게 정의해두고 그 후 구현하는 과정을 겪어봤는데, 개발 기간이 길어질수록 창의력과 유연성을 유지하기 매우 어려운 문제가 느껴졌습니다.\n따라서, 이번에는 소위 ‘Run & Gun’ 방식으로 개발을 진행합니다.\n핵심은 속도입니다. 하나의 읽고=&gt; 정리하고=&gt; 구현하는 과정이 48시간을 초과하지 않게 관리해볼 생각입니다.\n물론 완결성에 대한 trade-off는 감수해야 합니다.\n\n\n%load_ext autoreload\n%autoreload 2",
+    "crumbs": [
+      "Posts",
+      "Mainshow",
+      "Project Sentinel"
+    ]
+  },
+  {
+    "objectID": "posts/mainshow/poc-sentinel.html#ai-agent의-역할-정의",
+    "href": "posts/mainshow/poc-sentinel.html#ai-agent의-역할-정의",
+    "title": "Project Sentinel",
+    "section": "1. AI Agent의 역할 정의",
+    "text": "1. AI Agent의 역할 정의\n\n현재 AI 챗봇 서비스(chat) 및 일기장 관리 시스템(diary)의 인프라와 API가 구축되어 있습니다. 이들을 기반으로 AI Agent의 구체적인 기능들을 정의해봅시다.\n공통적으로 사용자의 모든 질문에 답변을 제공해야 합니다.\n사용자가 직접 설정한, 또는 대화 맥락을 통해 잠재적으로 사용자에게 맞춤화된 ’페르소나’를 LLM에 투영시키는 기능이 고려된 바 있습니다.",
+    "crumbs": [
+      "Posts",
+      "Mainshow",
+      "Project Sentinel"
+    ]
+  },
+  {
+    "objectID": "posts/mainshow/poc-sentinel.html#poc-by-langgraph",
+    "href": "posts/mainshow/poc-sentinel.html#poc-by-langgraph",
+    "title": "Project Sentinel",
+    "section": "2. POC by LangGraph",
+    "text": "2. POC by LangGraph\n\n기존 LangChain 코드 자산을 그대로 활용하면서도, agent 간 흐름을 명시적으로 설계하기 좋은 LangGraph를 일단 선택합니다.\nAugtoGen, MetaGPT, CrewAI 등 multi-agent framework들을 추후 고려해볼 수 있습니다.\n\n\n2.1 LangGraph 설치\n\n의존성 설치\nLangGraph 그래프 시각화 기능을 위해 graphviz 설치 (예시는 Windows 기준)\n\nuv add langgraph langchain langchain-openai\nchoco install graphviz",
+    "crumbs": [
+      "Posts",
+      "Mainshow",
+      "Project Sentinel"
+    ]
+  },
+  {
+    "objectID": "posts/mainshow/poc-sentinel.html#features",
+    "href": "posts/mainshow/poc-sentinel.html#features",
+    "title": "Project Sentinel",
+    "section": "Features:",
+    "text": "Features:\n\nRAG-Based functions",
+    "crumbs": [
+      "Posts",
+      "Mainshow",
+      "Project Sentinel"
     ]
   },
   {
