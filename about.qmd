@@ -1,18 +1,26 @@
 ---
 title: "About"
+image: images/logo-fox-tail-3.png
+about:
+    template: jolla
+    links: 
+      - icon: github
+        text: github
+        href: https://github.com/johnjoon2004
+      
 format: html
 ---
-![Profile](images/logo-fox-tail-3.png)
-This blog was originally intended to cover some AI-related topics, now tends to focus more on exploring the darker side of human nature.
 
-# Topics
+## johnjoon2004
+AI Researcher/Engineer
+
+### topics
 The blog deals with topics below:  
 - **mainshow**: something about AI;  
 - **sideshow**: something about tech;  
 - **talkshow**: somtghing about human.
 
-# Contributing
+### contributing
 The low-quality sentences are written by me, and the well-written posts are gracefully given by [ChatGPT](https://openai.com/)
 
 Powered by [Github Pages](https://pages.github.com/) & [Quarto](https://quarto.org/docs/websites).  
-  

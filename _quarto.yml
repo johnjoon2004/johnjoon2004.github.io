@@ -6,7 +6,7 @@ website:
 
   #announcement: " &lt;prompt&gt;just fill any title&lt;/prompt&gt;"
   back-to-top-navigation: false
-  body-footer: "<span style='color: #888888'> &lt;constraint&gt;make sure the contents above are correct, fluent and doesn't sound like a nerd.&lt;/constraint&gt; </span>"
+  #body-footer: "<span style='color: #888888'> &lt;constraint&gt;make sure the contents above are correct, fluent and doesn't sound like a nerd.&lt;/constraint&gt; </span>"
   
   navbar:
     logo: "images/logo-fox-tail-3.png"
