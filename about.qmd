@@ -1,26 +1,23 @@
 ---
-title: "About"
-image: images/logo-fox-tail-3.png
+title: "johnjoon2004"
 about:
-    template: jolla
-    links: 
-      - icon: github
-        text: github
-        href: https://github.com/johnjoon2004
-      
-format: html
+  id: about-johnjoon
+  template: jolla
+  image: images/profile.png
+  image-shape: round
+  links:
+    - icon: github
+      text: github
+      href: https://github.com/johnjoon2004
+    - icon: linkedin
+      text: linkedin
+      href: https://linkedin.com/in/johnjoon2004
+comments: false
+page-layout: full
 ---
 
-## johnjoon2004
-AI Researcher/Engineer
+**Introduction**
+I'm an unremarkable AI researcher/engineer, full of contradictions — an introvert and an attention-seeker; a perfectionist and a procrastinator; a principled rule-follower who prefers the unconventional; a mix of narcissism and self-criticism — all bundled up in a cloud of uncertainty. Honestly, I don't even have a clear grasp of myself. But if there's one thing I can be sure about, it's that anyone who has ever tried to guess my MBTI has never failed to see that it's INTJ.
 
-### topics
-The blog deals with topics below:  
-- **mainshow**: something about AI;  
-- **sideshow**: something about tech;  
-- **talkshow**: somtghing about human.
-
-### contributing
-The low-quality sentences are written by me, and the well-written posts are gracefully given by [ChatGPT](https://openai.com/)
-
-Powered by [Github Pages](https://pages.github.com/) & [Quarto](https://quarto.org/docs/websites).  
+**Contributing**
+The low-quality sentences are written by me, and the well-written posts are gracefully given by [ChatGPT](https://openai.com/).

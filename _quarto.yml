@@ -1,20 +1,33 @@
 project:
   type: website
+  preview:
+    port: 7777
 
 website:
   title: "johnjoon's blog"
-
-  #announcement: " &lt;prompt&gt;just fill any title&lt;/prompt&gt;"
   back-to-top-navigation: false
-  #body-footer: "<span style='color: #888888'> &lt;constraint&gt;make sure the contents above are correct, fluent and doesn't sound like a nerd.&lt;/constraint&gt; </span>"
-  
   navbar:
-    logo: "images/logo-fox-tail-3.png"
+    logo: "images/profile.png"
+    pinned: true
     search: true
-
-  sidebar: 
-    style: docked
-    contents: auto    
+    left: 
+      - icon: house-door
+        text: Home
+        href: index.qmd
+      - icon: book
+        text: Blog
+        href: blog.qmd
+      - icon: briefcase
+        text: Projects
+        href: projects.qmd
+      - icon: file-person
+        text: About
+        href: about.qmd
+  # sidebar: 
+  #   style: docked
+  #   contents: auto
+  page-footer:
+    center: "[johnjoon's blog](https://johnjoon2004.github.io)© 2025 johnjoon2004 | Powered by [Quarto](https://quarto.org/)"
 
 format:
   html:
@@ -24,3 +37,5 @@ format:
     css: styles.css
     toc: true
 
+execute: 
+  freeze: auto

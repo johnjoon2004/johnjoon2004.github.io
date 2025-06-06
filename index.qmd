@@ -1,12 +1,57 @@
 ---
-listing: 
+pagetitle: "johnjoon's blog"
+comments: false
+format:
+  html:
+    page-layout: full
+listing:
+  - id: langding-projects
+    contents: projects
+    type: table
+    max-items: 6
+    table-striped: true
+    sort:
+      - "date desc"
+      - "title asc"
+    fields: [title, description, date]
+  - id: landing-posts
     contents: posts
-    sort: "date desc"
     type: default
-    categories: true
-    sort-ui: false
-    filter-ui: false
-page-layout: full
-title-block-banner: true
-format: html
+    max-items: 6
+    sort: 
+      - "date desc"
+      - "title asc"
+about:
+  id: about-johnjoon
+  template: jolla
+  image: images/profile.png
+  image-shape: round
+  links:
+    - icon: github
+      text: github
+      href: https://github.com/johnjoon2004
+    - icon: linkedin
+      text: linkedin
+      href: https://linkedin.com/in/johnjoon2004
+back-to-top-navigation: false
 ---
+
+:::{#about-johnjoon}
+
+* A junior AI researcher/engineer in NLP domain. 
+* Current interest is the advancement and efficiency of the agentic systems.
+* Read more about me [here](about.qmd).
+
+:::
+
+### Blog
+Click [here](blog.qmd) to check out the latest on the blog.
+
+:::{#landing-posts}
+:::
+
+### Projects
+Click [here](projects.qmd) to check out my projects.
+
+:::{#landing-projects}
+:::
