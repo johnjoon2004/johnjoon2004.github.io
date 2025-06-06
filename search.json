@@ -1,103 +1,93 @@
 [
   {
-    "objectID": "posts/talkshow/experiment-3.html",
-    "href": "posts/talkshow/experiment-3.html",
-    "title": "johnjoon's blog",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "import pandas as pd\nfrom pprint import pprint\n\ndata = [\n    {\n        \"name\": \"재명\",\n        \"sex\": \"male\",\n        \"party\": \"DP\",\n    },\n    {\n        \"name\": \"덕수\",\n        \"sex\": \"male\",\n        \"party\": \"PPP\",\n    },\n    {\n        \"name\": \"준석\",\n        \"sex\": \"male\",\n        \"party\": \"Revolution\",\n    }\n]\n\ndf = pd.DataFrame(data)\npprint(df.head())\n\n  name   sex       party\n0   재명  male          DP\n1   덕수  male         PPP\n2   준석  male  Revolution\n\n\n\n\n\n &lt;constraint&gt;make sure the contents above are correct, fluent and doesn’t sound like a nerd.&lt;/constraint&gt;",
-    "crumbs": [
-      "Posts",
-      "Talkshow",
-      "Experiment 3"
-    ]
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nFact Check Agent\n\n\n\n\n\nAgent service protype implementation based on LangGraph etc.\n\n\n\n\n\n2025 06 06\n\n\njohnjoon2004\n\n1 min\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/mainshow/poc-sentinel.html",
-    "href": "posts/mainshow/poc-sentinel.html",
-    "title": "Project Sentinel",
+    "objectID": "posts/20250605.ai_got.html",
+    "href": "posts/20250605.ai_got.html",
+    "title": "Winter is coming",
     "section": "",
-    "text": "Author: johnjoon2004 (@code-b-devs)\nDate: 2025-05-13\n&lt;constraint&gt;make sure the contents above are correct, fluent and doesn’t sound like a nerd.&lt;/constraint&gt;",
-    "crumbs": [
-      "Posts",
-      "Mainshow",
-      "Project Sentinel"
-    ]
+    "text": "왕좌의 게임(HBO 드라마)은 2010년도를 지배했었던 수작이었습니다. 장장 10년간 7시즌(시즌 8도 있다고 하는데 저는 잘 모르겠네요)이 제작되었으니, 많은 분들에게 재미와 교훈을 선사했을 것입니다.\n어느덧 종영된지 8년이나 지났지만, 요즘 같은 AI 시대에 이 드라마를 다시 한번 회고해 보는 것도 좋을 것 같습니다. 원작 저자인 조지 R. R. 마틴은 실제 영국 역사를 기반으로 스토리의 틀을 구성하였고, 덕분에 작품 전반에 시대 흐름을 주도한 자, 따른 자, 대적한 자와 무시한 자들에 대한 서사가 곳곳에 반영되어 있습니다. 이를테면, 에다드 스타크는"
   },
   {
-    "objectID": "posts/mainshow/poc-sentinel.html#프로젝트-개요",
-    "href": "posts/mainshow/poc-sentinel.html#프로젝트-개요",
-    "title": "Project Sentinel",
-    "section": "프로젝트 개요",
-    "text": "프로젝트 개요\n\nLLM Agent: Sentinel\n\n본 프로젝트는 ’사용자 대화 및 일기 기반 멘탈 케어 AI Agent 연구 및 구현’을 목표로 합니다.\n구현하고자 하는 Agent별 기능의 확장성(Adaptability)을 핵심 요소로 고려하였기 때문에, 이러한 이름을 붙였습니다.\n원작 &lt;X-Men: Days of Future Past&gt;에 나오는 ’센티넬’은 꽤나 무시무시한 친구지만, 우리의 Sentinel은 작고 소중한 친구입니다.\n\n\n\nHow-to: Run & Gun\n\n제가 그냥 붙인 이름입니다. 무언가를 학습하는 과정에서 문서화와 프로토타입 구현을 동반하는 방식을 의미합니다.\n고도화된 에이전트 서비스 구현을 논하기엔 아직 제반 지식이 부족합니다.\n적어도 어떤 기능들이 필요할지, 그리고 그 기능들을 어떻게 구현할 수 있을지 정도까지는 빠르게 도달해야 합니다.\nSurvey 논문과 체계적으로 정리된 자료들(블로그/위키독스)부터 접근하는 것이 효율적으로 보입니다.\n기존에는 서비스를 구현할 때 요구 사항과 스펙을 나름 Solid하게 정의해두고 그 후 구현하는 과정을 겪어봤는데, 개발 기간이 길어질수록 창의력과 유연성을 유지하기 매우 어려운 문제가 느껴졌습니다.\n따라서, 이번에는 소위 ‘Run & Gun’ 방식으로 개발을 진행합니다.\n핵심은 속도입니다. 하나의 읽고=&gt; 정리하고=&gt; 구현하는 과정이 48시간을 초과하지 않게 관리해볼 생각입니다.\n물론 완결성에 대한 trade-off는 감수해야 합니다.\n\n\n%load_ext autoreload\n%autoreload 2",
-    "crumbs": [
-      "Posts",
-      "Mainshow",
-      "Project Sentinel"
-    ]
-  },
-  {
-    "objectID": "posts/mainshow/poc-sentinel.html#ai-agent의-역할-정의",
-    "href": "posts/mainshow/poc-sentinel.html#ai-agent의-역할-정의",
-    "title": "Project Sentinel",
-    "section": "1. AI Agent의 역할 정의",
-    "text": "1. AI Agent의 역할 정의\n\n현재 AI 챗봇 서비스(chat) 및 일기장 관리 시스템(diary)의 인프라와 API가 구축되어 있습니다. 이들을 기반으로 AI Agent의 구체적인 기능들을 정의해봅시다.\n공통적으로 사용자의 모든 질문에 답변을 제공해야 합니다.\n사용자가 직접 설정한, 또는 대화 맥락을 통해 잠재적으로 사용자에게 맞춤화된 ’페르소나’를 LLM에 투영시키는 기능이 고려된 바 있습니다.",
-    "crumbs": [
-      "Posts",
-      "Mainshow",
-      "Project Sentinel"
-    ]
-  },
-  {
-    "objectID": "posts/mainshow/poc-sentinel.html#poc-by-langgraph",
-    "href": "posts/mainshow/poc-sentinel.html#poc-by-langgraph",
-    "title": "Project Sentinel",
-    "section": "2. POC by LangGraph",
-    "text": "2. POC by LangGraph\n\n기존 LangChain 코드 자산을 그대로 활용하면서도, agent 간 흐름을 명시적으로 설계하기 좋은 LangGraph를 일단 선택합니다.\nAugtoGen, MetaGPT, CrewAI 등 multi-agent framework들을 추후 고려해볼 수 있습니다.\n\n\n2.1 LangGraph 설치\n\n의존성 설치\nLangGraph 그래프 시각화 기능을 위해 graphviz 설치 (예시는 Windows 기준)\n\nuv add langgraph langchain langchain-openai\nchoco install graphviz",
-    "crumbs": [
-      "Posts",
-      "Mainshow",
-      "Project Sentinel"
-    ]
-  },
-  {
-    "objectID": "posts/mainshow/poc-sentinel.html#features",
-    "href": "posts/mainshow/poc-sentinel.html#features",
-    "title": "Project Sentinel",
-    "section": "Features:",
-    "text": "Features:\n\nRAG-Based functions",
-    "crumbs": [
-      "Posts",
-      "Mainshow",
-      "Project Sentinel"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "posts/20250605.ai_got.html#왕좌의-게임",
+    "href": "posts/20250605.ai_got.html#왕좌의-게임",
+    "title": "Winter is coming",
     "section": "",
-    "text": "This blog was originally intended to cover some AI-related topics, now tends to focus more on exploring the darker side of human nature.\n\nTopics\nThe blog deals with topics below:\n- mainshow: something about AI;\n- sideshow: something about tech;\n- talkshow: somtghing about human.\n\n\nContributing\nThe low-quality sentences are written by me, and the well-written posts are gracefully given by ChatGPT\nPowered by Github Pages & Quarto.\n\n\n\n\n &lt;constraint&gt;make sure the contents above are correct, fluent and doesn’t sound like a nerd.&lt;/constraint&gt;",
-    "crumbs": [
-      "About"
-    ]
+    "text": "왕좌의 게임(HBO 드라마)은 2010년도를 지배했었던 수작이었습니다. 장장 10년간 7시즌(시즌 8도 있다고 하는데 저는 잘 모르겠네요)이 제작되었으니, 많은 분들에게 재미와 교훈을 선사했을 것입니다.\n어느덧 종영된지 8년이나 지났지만, 요즘 같은 AI 시대에 이 드라마를 다시 한번 회고해 보는 것도 좋을 것 같습니다. 원작 저자인 조지 R. R. 마틴은 실제 영국 역사를 기반으로 스토리의 틀을 구성하였고, 덕분에 작품 전반에 시대 흐름을 주도한 자, 따른 자, 대적한 자와 무시한 자들에 대한 서사가 곳곳에 반영되어 있습니다. 이를테면, 에다드 스타크는"
+  },
+  {
+    "objectID": "posts/20250605.ai_got.html#겨울이-온다",
+    "href": "posts/20250605.ai_got.html#겨울이-온다",
+    "title": "Winter is coming",
+    "section": "겨울이 온다",
+    "text": "겨울이 온다"
+  },
+  {
+    "objectID": "posts/20250605.ai_got.html#교육이란",
+    "href": "posts/20250605.ai_got.html#교육이란",
+    "title": "Winter is coming",
+    "section": "교육이란",
+    "text": "교육이란"
+  },
+  {
+    "objectID": "posts/20250605.ai_got.html#캐즘",
+    "href": "posts/20250605.ai_got.html#캐즘",
+    "title": "Winter is coming",
+    "section": "캐즘",
+    "text": "캐즘"
+  },
+  {
+    "objectID": "posts/20250605.ai_got.html#장벽",
+    "href": "posts/20250605.ai_got.html#장벽",
+    "title": "Winter is coming",
+    "section": "장벽",
+    "text": "장벽"
+  },
+  {
+    "objectID": "posts/20250605.ai_got.html#ai-시대에서-우리는",
+    "href": "posts/20250605.ai_got.html#ai-시대에서-우리는",
+    "title": "Winter is coming",
+    "section": "AI 시대에서 우리는",
+    "text": "AI 시대에서 우리는\n![]"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Index",
-    "section": "",
-    "text": "This blog was originally intended to cover some AI-related topics, now tends to focus more on exploring the darker side of human nature.\n\nTopics\nThe blog deals with topics below:\n- mainshow: something about AI;\n- sideshow: something about tech;\n- talkshow: somtghing about human.\n\n\nContributing\nThe low-quality sentences are written by me, and the well-written posts are gracefully given by ChatGPT\nPowered by Github Pages & Quarto.\n\n\n\n\n &lt;constraint&gt;make sure the contents above are correct, fluent and doesn’t sound like a nerd.&lt;/constraint&gt;"
-  },
-  {
-    "objectID": "posts/sideshow/experiment-2.html",
-    "href": "posts/sideshow/experiment-2.html",
     "title": "johnjoon's blog",
     "section": "",
-    "text": "import pandas as pd\nfrom pprint import pprint\n\ndata = [\n    {\n        \"name\": \"재명\",\n        \"sex\": \"male\",\n        \"party\": \"DP\",\n    },\n    {\n        \"name\": \"덕수\",\n        \"sex\": \"male\",\n        \"party\": \"PPP\",\n    },\n    {\n        \"name\": \"준석\",\n        \"sex\": \"male\",\n        \"party\": \"Revolution\",\n    }\n]\n\ndf = pd.DataFrame(data)\npprint(df.head())\n\n  name   sex       party\n0   재명  male          DP\n1   덕수  male         PPP\n2   준석  male  Revolution\n\n\n\n\n\n &lt;constraint&gt;make sure the contents above are correct, fluent and doesn’t sound like a nerd.&lt;/constraint&gt;",
-    "crumbs": [
-      "Posts",
-      "Sideshow",
-      "Experiment 2"
-    ]
+    "text": "A junior AI researcher/engineer in NLP domain.\nCurrent interest is the advancement and efficiency of the agentic systems.\nRead more about me here.\n\n \n  \n   \n  \n    \n     github\n  \n  \n    \n     linkedin\n  \n\n\n\n\nBlog\nClick here to check out the latest on the blog.\n\n\n\n\n\n\n\n\n\n\nWinter is coming\n\n\n\n\n\nwhen the winter come, you have to be prepared\n\n\n\n\n\nJun 5, 2025\n\n\njohnjoon2004\n\n\n\n\n\n\n\n\n\n\n\n\njupyter notebook demo\n\n\nthis is a subtitle\n\n\nthis is a description\n\n\n\n\n\nMay 13, 2025\n\n\njohnjoon2004\n\n\n\n\n\nNo matching items\n\n\n\nProjects\nClick here to check out my projects.\n\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\nDate\n\n\n\n\n\n\n\n\nFact Check Agent\n\n\nAgent service protype implementation based on LangGraph etc.\n\n\nJun 6, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "johnjoon2004",
+    "section": "",
+    "text": "Introduction I’m an unremarkable AI researcher/engineer, full of contradictions — an introvert and an attention-seeker; a perfectionist and a procrastinator; a principled rule-follower who prefers the unconventional; a mix of narcissism and self-criticism — all bundled up in a cloud of uncertainty. Honestly, I don’t even have a clear grasp of myself. But if there’s one thing I can be sure about, it’s that anyone who has ever tried to guess my MBTI has never failed to see that it’s INTJ.\nContributing The low-quality sentences are written by me, and the well-written posts are gracefully given by ChatGPT."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nWinter is coming\n\n\n\n\n\nwhen the winter come, you have to be prepared\n\n\n\n\n\n2025 06 05\n\n\njohnjoon2004\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\njupyter notebook demo\n\n\nthis is a subtitle\n\n\nthis is a description\n\n\n\n\n\n2025 05 13\n\n\njohnjoon2004\n\n1 min\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/20250513.test.html",
+    "href": "posts/20250513.test.html",
+    "title": "jupyter notebook demo",
+    "section": "",
+    "text": "import pandas as pd\nfrom pprint import pprint\n\ndata = [\n    {\n        \"name\": \"재명\",\n        \"sex\": \"male\",\n        \"party\": \"DP\",\n    },\n    {\n        \"name\": \"덕수\",\n        \"sex\": \"male\",\n        \"party\": \"PPP\",\n    },\n    {\n        \"name\": \"준석\",\n        \"sex\": \"male\",\n        \"party\": \"Revolution\",\n    }\n]\n\ndf = pd.DataFrame(data)\npprint(df.head())\n\n  name   sex       party\n0   재명  male          DP\n1   덕수  male         PPP\n2   준석  male  Revolution"
+  },
+  {
+    "objectID": "projects/20250606.test.html",
+    "href": "projects/20250606.test.html",
+    "title": "Fact Check Agent",
+    "section": "",
+    "text": "Lorem Ipsum"
   }
 ]

@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://johnjoon2004.github.io/posts/talkshow/experiment-3.html</loc>
-    <lastmod>2025-05-13T08:24:54.102Z</lastmod>
+    <loc>https://johnjoon2004.github.io/projects.html</loc>
+    <lastmod>2025-06-06T08:36:27.605Z</lastmod>
   </url>
   <url>
-    <loc>https://johnjoon2004.github.io/posts/mainshow/poc-sentinel.html</loc>
-    <lastmod>2025-05-13T10:58:23.676Z</lastmod>
-  </url>
-  <url>
-    <loc>https://johnjoon2004.github.io/about.html</loc>
-    <lastmod>2025-05-13T08:24:54.092Z</lastmod>
+    <loc>https://johnjoon2004.github.io/posts/20250605.ai_got.html</loc>
+    <lastmod>2025-06-06T08:59:07.787Z</lastmod>
   </url>
   <url>
     <loc>https://johnjoon2004.github.io/index.html</loc>
-    <lastmod>2025-05-13T08:24:54.099Z</lastmod>
+    <lastmod>2025-06-06T09:14:31.978Z</lastmod>
   </url>
   <url>
-    <loc>https://johnjoon2004.github.io/posts/sideshow/experiment-2.html</loc>
-    <lastmod>2025-05-13T08:24:54.101Z</lastmod>
+    <loc>https://johnjoon2004.github.io/about.html</loc>
+    <lastmod>2025-06-06T08:03:29.407Z</lastmod>
+  </url>
+  <url>
+    <loc>https://johnjoon2004.github.io/blog.html</loc>
+    <lastmod>2025-06-06T08:29:07.503Z</lastmod>
+  </url>
+  <url>
+    <loc>https://johnjoon2004.github.io/posts/20250513.test.html</loc>
+    <lastmod>2025-06-06T08:55:59.134Z</lastmod>
+  </url>
+  <url>
+    <loc>https://johnjoon2004.github.io/projects/20250606.test.html</loc>
+    <lastmod>2025-06-06T09:16:21.260Z</lastmod>
   </url>
 </urlset>

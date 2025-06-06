@@ -1,0 +1,23 @@
+[
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/20250606.test.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/projects/20250606.test.html",
+      "/posts/20250605.ai_got.html",
+      "/posts/20250513.test.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/20250605.ai_got.html",
+      "/posts/20250513.test.html"
+    ]
+  }
+]
