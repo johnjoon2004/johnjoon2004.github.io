@@ -9,15 +9,15 @@
     "listing": "/index.html",
     "items": [
       "/projects/20250606.test.html",
-      "/posts/20250605.ai_got.html",
-      "/posts/20250513.test.html"
+      "/posts/2025-06-08-team_distance.html",
+      "/posts/2025-06-08-benfords_law_in_mgtd.html"
     ]
   },
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/20250605.ai_got.html",
-      "/posts/20250513.test.html"
+      "/posts/2025-06-08-team_distance.html",
+      "/posts/2025-06-08-benfords_law_in_mgtd.html"
     ]
   }
 ]
