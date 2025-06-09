@@ -1,7 +1,19 @@
+# BUILD FILES
 .venv/
 .quarto/
 _site/
-/.quarto/
-/_site/
 
+# TEMPORARY FILES
+**/helper.py
+
+
+
+
+
+# PRIVATE FILES
+# --------------------
 .env
+private/
+# --------------------
+
+/.quarto/
