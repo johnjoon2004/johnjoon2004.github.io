@@ -673,14 +673,14 @@ Note
 <span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>        vec <span class="op">=</span> (unit1, unit2)</span>
 <span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>        unit_avg_attentions[vec] <span class="op">=</span> unit_total_attentions[vec] <span class="op">/</span> term</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>드물긴 하지만, 만약 어떤 팀이 다른 특정 팀에 대한 조회수가 0일 경우, (즉, 관심도가 0), 이를 명시해줍니다.</p>
+<p>드물긴 하지만, 만약 어떤 팀이 다른 특정 팀에 대한 조회수가 0일 경우(즉, 관심도가 0), 이를 명시해줍니다.</p>
 <div id="cell-62" class="cell" data-execution_count="33">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> unit1 <span class="kw">in</span> unit_set:</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> unit2 <span class="kw">in</span> unit_set:</span>
 <span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (unit1, unit2) <span class="kw">not</span> <span class="kw">in</span> unit_avg_attentions:</span>
 <span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>            unit_avg_attentions[(unit1, unit2)] <span class="op">=</span> <span class="fl">0.0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>앞서 계산한 ‘관심도’는 방향성이 있습니다. 두 팀 간의 관심도를 결합하는 방식으로 두 팀 사이의 ’상호 관심도’(<code>unit_avg_attentions_bi</code>)를 계산해봅시다. 계산된 ’상호 관심도’는 명등성을 가지게 됩니다.</p>
+<p>앞서 계산한 ‘관심도’는 방향성이 있습니다. 두 팀 간의 관심도를 결합하는 방식으로 두 팀 사이의 ’상호 관심도’(<code>unit_avg_attentions_bi</code>)를 계산해봅시다. 계산된 ’상호 관심도’는 멱등성을 지니게 됩니다.</p>
 <div id="cell-64" class="cell" data-execution_count="34">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>unit_avg_attentions_bi <span class="op">=</span> defaultdict(<span class="bu">float</span>)</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> unit1 <span class="kw">in</span> unit_set:</span>
