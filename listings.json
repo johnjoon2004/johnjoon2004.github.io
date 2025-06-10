@@ -6,18 +6,16 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/blog.html",
     "items": [
-      "/projects/20250606.test.html",
-      "/posts/2025-06-08-team_distance.html",
-      "/posts/2025-06-08-benfords_law_in_mgtd.html"
+      "/posts/2025-06-08-team_distance.html"
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/index.html",
     "items": [
-      "/posts/2025-06-08-team_distance.html",
-      "/posts/2025-06-08-benfords_law_in_mgtd.html"
+      "/projects/20250606.test.html",
+      "/posts/2025-06-08-team_distance.html"
     ]
   }
 ]
