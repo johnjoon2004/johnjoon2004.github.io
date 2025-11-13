@@ -229,6 +229,7 @@ window.Quarto = {
 </header>
 
 
+<p><img src="../images/post_251114_gemma_scope/icon.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -246,13 +247,16 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p><strong>Opened Resources</strong>:</p>
 <ul>
-<li>Weights and tutorial: https://huggingface.co/google/gemma-scope</li>
-<li>Interactive demo: https://neuronpedia.org/gemma-scope</li>
+<li><a href="https://arxiv.org/abs/2408.05147">Gemma Scope: Open Sparse Autoencoders Everywhere All At Once on Gemma 2</a> (Google, 2024)</li>
+<li>Weights and tutorial: <a href="https://huggingface.co/google/gemma-scope">https://huggingface.co/google/gemma-scope</a></li>
+<li>Interactive demo: <a href="https://neuronpedia.org/gemma-scope">https://neuronpedia.org/gemma-scope</a></li>
 </ul>
+<p><img src="../images/post_251114_gemma_scope/demo-site-ui.png" class="img-fluid"></p>
+<p><br></p>
 <p><strong>GemmaScope 분석 모델</strong>:</p>
 <ul>
-<li>Gemma 2 2B and 9B (base?): all layers and sub-layers</li>
-<li>Gemma 2 27B base: select layers</li>
+<li>Gemma 2 2B and 9B: all layers and sub-layers</li>
+<li>Gemma 2 27B: select layers</li>
 <li>(<strong>Insturction</strong>: primarily train SAEs on the <strong><em>Gemma 2 pre-trained</em></strong> models, but additionally release SAEs trained on <strong><em>instruction-tuned Gemma 2 9B</em></strong> for comparison)</li>
 </ul>
 <p><strong>GemmaScope(SAE)’s Architecture</strong>:</p>
@@ -310,12 +314,6 @@ Loss := ||x-f(x)||^{2}_{2} + \lambda ||f(x)||_{0}
 </section>
 <section id="training-details" class="level2">
 <h2 class="anchored" data-anchor-id="training-details">Training Details</h2>
-<ul>
-<li>⚠️“<em>Once training is complete, we <strong>rescale</strong> the trained SAE parameters so that no input normalization is required for inference.</em>”
-<ul>
-<li><em>(Appendix A 참고)</em></li>
-</ul></li>
-</ul>
 <section id="data" class="level3">
 <h3 class="anchored" data-anchor-id="data"><strong>Data</strong>:</h3>
 <ul>
@@ -467,7 +465,7 @@ Loss := ||x-f(x)||^{2}_{2} + \lambda ||f(x)||_{0}
 <ul>
 <li><strong>float32</strong> vs <strong>bfloat16</strong> → <strong><em>Negligible impact!</em></strong></li>
 </ul>
-<img src="../images/post_251114_gemma_scope/figure-5.png" class="img-fluid"></li>
+<img src="../images/post_251114_gemma_scope/figure-10.png" class="img-fluid"></li>
 </ul>
 </section>
 </section>
