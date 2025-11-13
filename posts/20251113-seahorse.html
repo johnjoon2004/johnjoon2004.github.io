@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="johnjoon2004">
+<meta name="dcterms.date" content="2025-10-22">
+<meta name="description" content="최근 LLM이 해마 이모지에 고장나버리는 현상이 발견된 바 있습니다. 단순히 또 다른 유형의 할루시네이션인가 싶지만, 좀 더 깊이 생각해봄직한 무언가가 있어 보입니다.">
 
-<title>johnjoon’s blog</title>
+<title>Seahorse and Elephant – johnjoon’s blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,95 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-langding-projects .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-description','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-langding-projects'] = new List('listing-langding-projects', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-landing-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-landing-posts'] = new List('listing-landing-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -165,10 +81,10 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/profile.png" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/profile.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">johnjoon’s blog</span>
     </a>
   </div>
@@ -179,22 +95,22 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> <i class="bi bi-house-door" role="img">
+    <a class="nav-link" href="../index.html"> <i class="bi bi-house-door" role="img">
 </i> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> <i class="bi bi-book" role="img">
+    <a class="nav-link" href="../blog.html"> <i class="bi bi-book" role="img">
 </i> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> <i class="bi bi-briefcase" role="img">
+    <a class="nav-link" href="../projects.html"> <i class="bi bi-briefcase" role="img">
 </i> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> <i class="bi bi-file-person" role="img">
+    <a class="nav-link" href="../about.html"> <i class="bi bi-file-person" role="img">
 </i> 
 <span class="menu-text">About</span></a>
   </li>  
@@ -206,7 +122,7 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -214,211 +130,114 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#blog" id="toc-blog" class="nav-link active" data-scroll-target="#blog">Blog</a></li>
-  <li><a href="#projects" id="toc-projects" class="nav-link" data-scroll-target="#projects">Projects</a></li>
+  <li><a href="#해마-공격" id="toc-해마-공격" class="nav-link active" data-scroll-target="#해마-공격">해마 공격</a></li>
+  <li><a href="#해마와-코끼리-수학과-철학" id="toc-해마와-코끼리-수학과-철학" class="nav-link" data-scroll-target="#해마와-코끼리-수학과-철학">해마와 코끼리, 수학과 철학</a></li>
+  <li><a href="#green-field-brown-field" id="toc-green-field-brown-field" class="nav-link" data-scroll-target="#green-field-brown-field">Green-field &amp; Brown-field</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div class="quarto-about-jolla column-page-left">
-  <img src="images/profile.png" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block"></header><div id="about-johnjoon">
-<ul>
-<li>A junior AI researcher/engineer in NLP domain.</li>
-<li>Current interest is the advancement and efficiency of the agentic systems.</li>
-<li>Read more about me <a href="./about.html">here</a>.</li>
-</ul>
-</div> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://github.com/johnjoon2004" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">github</span>
-  </a>
-  <a href="https://linkedin.com/in/johnjoon2004" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">linkedin</span>
-  </a>
-</div>
-</div>
-
-<section id="blog" class="level3">
-<h3 data-anchor-id="blog">Blog</h3>
-<p>Click <a href="./blog.html">here</a> to check out the latest on the blog.</p>
-<div id="listing-landing-posts" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TExN" data-listing-date-sort="1761058800000" data-listing-file-modified-sort="1763055645579" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="614">
-<div class="thumbnail"><a href="./posts/20251113-seahorse.html" class="no-external">
-
-<img loading="lazy" src="./images/post_251114_seahorse/icon.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/20251113-seahorse.html" class="no-external">Seahorse and Elephant</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/20251113-seahorse.html" class="no-external">
-<p>최근 LLM이 해마 이모지에 고장나버리는 현상이 발견된 바 있습니다. 단순히 또 다른 유형의 할루시네이션인가 싶지만, 좀 더 깊이 생각해봄직한 무언가가 있어 보입니다.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/20251113-seahorse.html" class="no-external">
-<div class="listing-date">
-Oct 22, 2025
-</div>
-<div class="listing-author">
-johnjoon2004
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="TWVjaGFuaXN0aWMlMjBJbnRlcnByZXRhYmlsaXR5JTJDWEFJJTJDTExN" data-listing-date-sort="1758639600000" data-listing-file-modified-sort="1763053903064" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1769">
-<div class="thumbnail"><a href="./posts/20251114-review-gemmascope.html" class="no-external">
-
-<img loading="lazy" src="./images/post_251114_gemma_scope/icon.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/20251114-review-gemmascope.html" class="no-external">[논문 리뷰] Gemma Scope: Open Sparse Autoencoders Everywhere All At Once on Gemma 2</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/20251114-review-gemmascope.html" class="no-external">
-<p>Google은 2024년 LLM(Gemma2) 해석 도구 GemmaScope를 공개한 바 있습니다. GemmaScope는 Sparse Autoencoder를 기반으로 언어 모델의 내부 동작 흐름(activation)을 추적하고 그 의미를 사람이 이해할 수 있도록 돕기 위해 만들어졌습니다. GemmaScope의 구현을 논문을 통해 이해해봅시다.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/20251114-review-gemmascope.html" class="no-external">
-<div class="listing-date">
-Sep 24, 2025
-</div>
-<div class="listing-author">
-johnjoon2004
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="RGF0YSUyMEFuYWx5c2lzJTJDQml0cyUyMCUyNiUyMEJvYnM=" data-listing-date-sort="1749308400000" data-listing-file-modified-sort="1750480868205" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1387">
-<div class="thumbnail"><a href="./posts/2025-06-08-team_distance.html" class="no-external">
-
-<img loading="lazy" src="./images/post_250608_team_distance/heatmap.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025-06-08-team_distance.html" class="no-external">Calculating ‘Team-Attention’ within Company using Viewer Statistics of Intranet Posts</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/2025-06-08-team_distance.html" class="no-external">
-<p>게시글의 조회수 분석을 통해 사내 부서 간의 ‘관심도’(또는, 업무 관련성)를 추정해보는 실험입니다.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/2025-06-08-team_distance.html" class="no-external">
-<div class="listing-date">
-Jun 8, 2025
-</div>
-<div class="listing-author">
-johnjoon2004
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-<section id="projects" class="level3">
-<h3 data-anchor-id="projects">Projects</h3>
-<p>Click <a href="./projects.html">here</a> to check out my projects.</p>
-<div id="landing-projects">
-
-</div>
-
-
-
-
-</section>
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-langding-projects">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-langding-projects-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-langding-projects'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-    </select>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Seahorse and Elephant</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">LLM</div>
   </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+  </div>
+
+<div>
+  <div class="description">
+    최근 LLM이 해마 이모지에 고장나버리는 현상이 발견된 바 있습니다. 단순히 또 다른 유형의 할루시네이션인가 싶지만, 좀 더 깊이 생각해봄직한 무언가가 있어 보입니다.
+  </div>
 </div>
-<table class="quarto-listing-table table table-striped">
-<thead>
-<tr>
 
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
 
-<th>
-Description
-</th>
+<div class="quarto-title-meta">
 
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>johnjoon2004 </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 22, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
+
+</header>
+
+
+<section id="해마-공격" class="level2">
+<h2 class="anchored" data-anchor-id="해마-공격">해마 공격</h2>
+<p>최근 GPT-5, Claude-4.5-sonnet과 같은 기라성 같은 LLM들에게 “해마 이모지가 있냐”고 질문하면 뚝심있게 “있다”고 답변하고, 그럼 그것을 출력해보라고 시키면 맛이 가버리는 현상이 발견되었다.</p>
+<p>해마 공격’에 정신 못차리는 LLM들:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="../images/post_251114_seahorse/llm1.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="../images/post_251114_seahorse/llm2.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="../images/post_251114_seahorse/llm3.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="../images/post_251114_seahorse/llm4.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="../images/post_251114_seahorse/llm5.png" class="img-fluid"></td>
 </tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-categories="U3BhcnNlJTIwQXV0b2VuY29kZXIlMkNNZWNoYW5pc3RpYyUyMEludGVycHJldGFiaWxpdHklMkNMTE0lMkNYQUk=" data-listing-date-sort="1763046000000" data-listing-file-modified-sort="1763054428759" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Mechanistic Interpretability of Language Models" data-listing-filename-sort="mechanistic_interpretability.md">
-<td>
-<a href="./projects/mechanistic_interpretability.html" class="title listing-title">Mechanistic Interpretability of Language Models</a>
-</td>
-<td>
-<span class="listing-description">Interpret &amp; Explain the feature of language models through SAE(Sparse Autoencoder)</span>
-</td>
-<td>
-<span class="listing-date">Nov 14, 2025</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-categories="QUdFTlQlMkNMTE0=" data-listing-date-sort="1749135600000" data-listing-file-modified-sort="1763054444353" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Fact Check Agent" data-listing-filename-sort="fact_checker.md">
-<td>
-<a href="./projects/fact_checker.html" class="title listing-title">Fact Check Agent</a>
-</td>
-<td>
-<span class="listing-description">Agent service protype implementation based on LangGraph etc.</span>
-</td>
-<td>
-<span class="listing-date">Jun 6, 2025</span>
-</td>
-
-</tr>
-
 </tbody>
 </table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+<p>LLM들은 왜 해마 이모지에서 이상 행동을 보일까?</p>
+<p>그것은 LLM은 “해마 이모지가 존재한다”는 굳은 믿음을 갖고 있기 때문이다. 이러한 믿음의 근거는 훈련 데이터로부터 기원했을 가능성이 높다고 한다. 과거부터 현재까지도 많은 사람들이 실제로는 존재하지 않는 해마 이모지가 유니코드 상 존재한다고 확신하거나(<i>“무조건 있음. 내가 써봤어!”</i>), 없다는 것을 왠만해서는 알기 어려워한다(<i>“없을리가? 있겠지 뭐”</i>). 일단 본인 스스로도 해마 이모지가 없을 줄은 몰랐다. LLM 입장에선 있다고 확신하는데 머리 속에 답이 안 떠오르니 맛이 가버리는 것이다. (일종의 ’만델라 효과’가 일으키는 인지부조화 작용이 아닐까?)</p>
+</section>
+<section id="해마와-코끼리-수학과-철학" class="level2">
+<h2 class="anchored" data-anchor-id="해마와-코끼리-수학과-철학">해마와 코끼리, 수학과 철학</h2>
+<p>해마는 자신의 이모지를 희생하면서까지 인간에게 어떠한 교훈을 주고 있다. 그것은 수학과 철학에 관한 것이다.</p>
+<p>만약 어떤 개념에 정답이 있다면 그것은 수학이고, 정답이 없다면 그것은 철학이다.</p>
+<p>또한, 존재하는 모든 개념은 수학과 철학이 일정 비율로 혼합된 것으로 귀결할 수 있다.</p>
+<p>예시-1) “너 밥 먹었어?” -&gt; 99% 수학 + 1% 철학적인 문제이다. “너”, “밥” 등의 정의를 철학적으로 접근하지 않는 이상, 해당 질문은 가장 최근의 식사 시간(사회 통념 상) 내에 식사를 했는지에 대한 진위 여부를 물어본 것이고, 이것은 분명한 정답이 존재한다. 먹었으면 먹은 것이고 안 먹었으면 안 먹은 것이다. (이에 따라, “나는 밥 먹었다” 역시 99% 수학적인 명제이다)</p>
+<p>예시-2) “리만 가설의 증명 공식은 뭐야?” -&gt; 100% 수학적인 문제이다. 혹자는 “이거 답 없는 문제임”을 지적할 수 있겠으나, 답을 우리가 모르는 것이지 존재하긴 할 것이다. 이 문제에서는 어떠한 철학적 요소도 존재하지 않아 보인다.</p>
+<p>예시-3) “귀멸의 칼날 볼만한가요?” -&gt; 100% 철학적인 문제이다. 다만 질문의 해석에 따라 어느 정도 다른 관점이 존재할 여지가 있다. 예를 들어, ’귀멸의 칼날을 보고 난 다음 느낀 감정’을 취지로 질문한 것으로 해석한다면, 거기에는 수학적 요인이 존재하지 않지만, ’관객 수’를 기준으로 볼만한지 여부를 판단하는 것을 가정한 질문이라면, 그것은 정답이 존재하는 문제이기 때문이다.</p>
+<p>예시-4) “이 질문은 몇 퍼센트 수학/몇 퍼센트 철학인 문제인가요?” -&gt; 100% 철학적인 문제이다. 내가 만약 “50-50 이요”라고 답했을 경우, 그것이 참이 아님을 증명할 방법이 없기 때문이다.</p>
+<p>LLM은 좋은 수학자지만, 매우 나쁜 철학자이다.</p>
+<p>LLM의 모든 사고에는 정답이 있다. LLM의 지능 수준을 간과하려는 의도는 전혀 아니다. 다만, 이 친구들의 세상에서는 모든 감지 가능한 정보에 숫자가 붙어있다. 때로는 정답 자체가 존재하지 않는 문제를 만날 수도 있고, 때로는 심지어 틀린 것이 옳은 것일 때도 있다. LLM과 대화 중, “절대 코끼리를 생각하지마”라고 언급한 다음, 몇 번 대화가 오고가면 결국 이야기는 코끼리와 잠재적으로 연관된 토픽으로 가버린다. LLM의 극단적으로 수학자스러운 기질 때문이다. 코끼리 언급이 금지된 이상, ’코끼리’의 정보 표현과 수학적으로 거리가 최대한 먼 개념을 인지하려고 노력하기 때문이다. 근데 그것은 아마도 바로 “코끼리”일 것이다. 반면, 인간은 어떠한가? LLM 기준으로 이들은 매우 나쁜 수학자(LLM의 연산 속도 기준으로 봤을 때)임은 분명하지만, 모든 인간들은 기본적으로 천재적인 철학자들이다. 모든 인간은 “답이 없는 문제”에 있어 자신의 사상, 감정 등 자각할 수 있는 정보를 기반으로 솔루션을 만들어낼 수 있기 때문이다. 이것은 LLM이 봤을 때는 아마도 개쩌는 능력일 것이다. 그 결과, 인간은 코끼리로부터 매우 자유로울 수 있다. “코끼리 생각하지 말라고? 알았어, 깔끔하게 잊어줄게”한 다음 주가 예측 추리 과정을 전개함으로써 실제로 코끼리를 깔끔하게 잊는 것이 가능하다.</p>
+</section>
+<section id="green-field-brown-field" class="level2">
+<h2 class="anchored" data-anchor-id="green-field-brown-field">Green-field &amp; Brown-field</h2>
+<p>우리는 LLM처럼 약 1000억 개 이상의 병렬 연산 가능한 뇌세포가 없다(아마 실제로는 있을건데 두뇌를 풀가동해야 함). 때문에, 우리는 수학적인 문제 처리, 특히 ’Brown-field’에 있어 인공지능을 이미 이길 수 없고, 앞으로도 이길 수 없을 것이다. 반면, LLM이 못하는 ’Green-field’에서 인간이 그 역할을 하는 것이 미래에는 이상적인 역할 분할 방향이 될 것이다. 사람의 빛나는 아이디어를 LLM이 관철하고, 한 사람이 가진 고유 ’감성’으로 LLM이 내세운 ’정답’을 꺾는 습관이 필요하다. 해마가 없으면 없다고 할 수 있는 수학자가 되려고 노력해야 겠으며, 하루 종일 코끼리만 생각하지 않는 좋은 철학자가 되려고 노력해야 겠다.</p>
+<hr>
+<p>(참고) Green-field와 Brown-field는 투자 또는 프로젝트 개발에서 자주 사용되는 용어라고 한다.</p>
+<ul>
+<li>Green-field: 완전히 새로운 프로젝트를 시작하거나, 기존 개발 없이 처음부터 모든 것을 구축하는 형태의 투자</li>
+<li>Brown-field: 이미 존재하는 시설이나 인프라를 활용하여 추가적으로 개발하거나, 기존 자산을 리모델링하는 형태의 투자</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

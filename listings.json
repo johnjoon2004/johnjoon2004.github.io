@@ -2,13 +2,16 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/projects/20250606.test.html"
+      "/projects/mechanistic_interpretability.html",
+      "/projects/fact_checker.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
-      "/projects/20250606.test.html",
+      "/projects/mechanistic_interpretability.html",
+      "/projects/fact_checker.html",
+      "/posts/20251113-seahorse.html",
       "/posts/20251114-review-gemmascope.html",
       "/posts/2025-06-08-team_distance.html"
     ]
@@ -16,6 +19,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/20251113-seahorse.html",
       "/posts/20251114-review-gemmascope.html",
       "/posts/2025-06-08-team_distance.html"
     ]
