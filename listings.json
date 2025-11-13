@@ -6,15 +6,17 @@
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/index.html",
     "items": [
+      "/projects/20250606.test.html",
+      "/posts/20251114-review-gemmascope.html",
       "/posts/2025-06-08-team_distance.html"
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/blog.html",
     "items": [
-      "/projects/20250606.test.html",
+      "/posts/20251114-review-gemmascope.html",
       "/posts/2025-06-08-team_distance.html"
     ]
   }
